@@ -1,0 +1,107 @@
+/* regole generali */
+*{
+  box-sizing: border-box;
+  padding:0;
+  margin:0;
+}
+
+body{
+  background-image: url(../sfondo66.jpg);
+  background-repeat: no-repeat;
+}
+
+/* regole navbar */
+nav {
+  background-color: rgb(255, 77, 0);
+  height: 80px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border: 1px solid black;
+  margin-top: 16px;
+}
+
+/* regole parte logo */
+.logo {
+  width: 300px;
+  display: flex;
+  justify-content: space-around;
+}
+
+/* regole parte navigazione */
+.navigazione {
+  display: flex;
+}
+.navigazione ul{
+  margin-top: 10px;
+  width: 300px;
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+}
+
+.navigazione ul li {
+  cursor: pointer;
+}
+
+#nomargin{
+  margin: 0;
+  width: 150px;
+}
+
+#hero {
+  top: 35px;
+  right: 110px;
+  padding: 10px 20px;
+  border: 1px solid black;
+  border-radius: 10px;
+  margin-bottom: 0px;
+}
+
+/* regole menu a comparsa */
+.blocchetto ul{
+  width: 85px;
+  color:  rgb(255, 77, 0);
+  background-color: black;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  border: rgb(255, 77, 0) 1px solid;
+}
+
+.blocchetto ul li{
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.menuburger {
+  font-size: 46px;
+  font-weight: bold;
+  color: rgb(255, 77, 0);
+  position: fixed;
+  top: 120px;
+  left: 50%;
+  background-color: black;
+  border: rgb(255, 77, 0) 1px solid;
+  padding: 50px;
+  width: 330px;
+}
+
+.chiudi h1, .burger, .menuburger{
+  display: none;
+}
+
+/* regole media query */
+@media all and (max-width: 970px){
+  .chiudi h1, .burger{
+    display: inline-block;
+  }
+  .navigazione, #hero {
+    display: none;
+  }
+  .logo h3{
+    font-size:30px;
+    margin-left: 10px;
+  }
